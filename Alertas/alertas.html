@@ -42,15 +42,52 @@
 
         </div>
 
+        
+        <div class="alert alert-info">
+            Information!
+            <a href="http://youtube.com.br" target="_blank">clique aqui</a>
+        </div>
+        
+        <div class="alert alert-dark">
+            <h4>Título</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, maiores omnis? Atque molestias eius tenetur accusamus provident cum maiores quae illum dolorem quo. In praesentium quia, temporibus porro omnis amet.
+                Eos, quam quis iusto consequuntur magnam magni iure sapiente natus, unde quas est! Quos unde similique autem iste modi dicta eum esse quam? Voluptatum eius, quibusdam illo et aperiam nostrum!
+            </p>
+            <hr>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto molestiae rem velit delectus ea mollitia reprehenderit necessitatibus neque ipsum laudantium ratione dignissimos, sunt aliquam obcaecati dolore tempora laborum aut. Dicta!
+                Tenetur reprehenderit deleniti ex voluptatem aliquam inventore. Accusantium excepturi molestias quae quo possimus itaque laudantium animi odio architecto? Dolorum eum beatae delectus. Unde quos, magni deserunt architecto distinctio omnis a.    
+            </p>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugiat ad quod omnis magnam dolore suscipit commodi ducimus. A, labore error ut nam sunt iure molestiae modi architecto quasi. Corrupti?
+            <button class="close" 
+            data-dismiss="alert" 
+            arial-label="close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        
+        <button id="btn-close-all" type="button" class="btn btn-danger">
+            Fechar todos alertas!
+        </button>
+
     </div>
 
     
-   
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script>
+    $(() =>{
+        $('#btn-close-all').on('click', e =>{
+            $('.alert').alert('close');
+        });
+    });
+</script>
 </body>
 </html>
